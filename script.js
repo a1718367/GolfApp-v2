@@ -22,9 +22,11 @@ function success(pos){
   console.log(latn, lonn)
   info(latn,lonn);
   forcast(latn, lonn);
-  initMap(latn, lonn);
+  
   if(userlocal.length!=0){
   rendermap(latn,lonn);
+  }else{
+    initMap(latn, lonn);
   }
   
 
@@ -209,15 +211,15 @@ function initMap(lat, log) {
         new google.maps.Marker({position: latlog, map: map, 
         icon: 'https://maps.google.com/mapfiles/kml/shapes/golf.png'});
 
-    google.maps.event.addListener(map, 'click', function(event) {
-      var latt = event.latLng.lat();
-      var long = event.latLng.lng()
-      console.log(latt, long);
-      new google.maps.Marker({position: event.latLng, map: map, 
-        icon: 'https://maps.google.com/mapfiles/kml/pal2/icon13.png'});
-      storelocation(latt,long);
+    // google.maps.event.addListener(map, 'click', function(event) {
+    //   var latt = event.latLng.lat();
+    //   var long = event.latLng.lng()
+    //   console.log(latt, long);
+    //   new google.maps.Marker({position: event.latLng, map: map, 
+    //     icon: 'https://maps.google.com/mapfiles/kml/pal2/icon13.png'});
+    //   storelocation(latt,long);
       
-    });
+    // });
 
 };
 
@@ -254,15 +256,15 @@ function rendermap(lat,log){
     
   }
 
-      google.maps.event.addListener(map, 'click', function(event) {
-      var latt = event.latLng.lat();
-      var long = event.latLng.lng()
-      console.log(latt, long);
-      new google.maps.Marker({position: event.latLng, map: map, 
-        icon: 'https://maps.google.com/mapfiles/kml/pal2/icon13.png'});
-      storelocation(latt,long);
+    //   google.maps.event.addListener(map, 'click', function(event) {
+    //   var latt = event.latLng.lat();
+    //   var long = event.latLng.lng()
+    //   console.log(latt, long);
+    //   new google.maps.Marker({position: event.latLng, map: map, 
+    //     icon: 'https://maps.google.com/mapfiles/kml/pal2/icon13.png'});
+    //   storelocation(latt,long);
       
-    })
+    // })
 
 }
 
