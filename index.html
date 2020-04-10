@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Golf App</title>
+
+  
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Set the size of the div element that contains the map */
+   #map {
+     height: 400px;  /* The height is 400 pixels */
+     width: 100%;  /* The width is the width of the web page */
+    }
+ </style>
+
+  
+
+</head>
+<body>
+
+
+
+
+<nav class="flex items-center justify-between flex-wrap bg-blue-700 p-6">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <span class="text-2xl text-white tracking-widest pr-2 font-bold">Golf App</span>
+    <i class="fa fa-golf-ball fa-2x text-white"></i>
+  </div>
+  <!--<div class="block lg:hidden">
+    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+  </div>-->
+  <div class="lg:ml-10 w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div class="text-base lg:flex-grow">
+      <a href="./index.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        Home
+      </a>
+
+      <a href="./scorecard.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        Score Card
+      </a>
+
+
+    </div>
+
+  </div>
+</nav>
+
+<div class="flex mb-4">
+
+
+  <div class="container weather mt-2 w-1/2 rounded-lg">
+
+    <div class="flex flex-wrap">
+
+      <div class="w-full md:w-1/2">
+        <h3 class="text-2xl px-2">Current Weather</h3>
+        <h4 class="mt-2 px-2"><span id="temp"></span><span class="d-inline-flex align-text-bottom" id="deg">°C</span></h4>
+        <h4 class="px-2 py-2">Wind Speed: <span id="wspd"></span> m/s</h4>
+        <h4 class="px-2 py-2">Weather Condition: <span id="forcast"></span></h4>
+  
+      
+      </div>
+      <div class="w-full md:w-1/2">
+      
+        <div class = "text-center compassdisplay">
+          <h3 class="text-xl px-2 my-2 text-center pt-12 lg:pt-2">Compass</h3>
+          <img id= 'arrow' class ="arrowimage mx-auto" src="./assets/arrow1.png">
+          <p id = "degree"> Compass not working</p>
+          <p id = "pleasenote"> Please note: Compass only works with handheld devices</p>
+      </div>
+      
+      </div>
+    
+    </div>
+
+  
+  </div>
+  
+  <div class="container mt-2 ml-2 w-1/2 forecast rounded-lg">
+    <h3 class="text-2xl px-2">Forecast</h3>
+    <div id="forecast"></div>
+
+    
+  
+  </div>
+
+
+</div>
+
+<div class="flex flex-wrap mx-auto my-2">
+
+  <!-- <div class="container mt-2 w-1/2 compass">
+      <h3 class="text-xl px-2 text-center">Compass</h3>
+      
+        <div class="container flex justify-center">
+          <div class = "text-center compassdisplay">
+            <img id= 'arrow' class ="arrowimage" src="./assets/arrow1.png">
+            <p id = "degree"> Compass not working</p>
+            <p id = "pleasenote"> Please note: Compass only works with handheld devices</p>
+        </div>
+          
+        </div>
+
+      </div> -->
+
+        <div class="mt-2 w-full wind">
+          <h3 class="text-xl text-center">Wind Direction</h3>
+          <div class="container flex mx-auto">
+            <div class = "text-center compassdisplay mx-auto">
+              <img id="windarrow" class ="arrowimage mx-auto" src="./assets/wind.png">
+              <p id = "windavailable"> Wind direction unavailable</p>
+          </div>
+
+          </div>
+
+
+        </div>
+    
+</div>
+
+<div class="flex flex-wrap holen mx-auto">
+
+  <div class="w-full md:w-1/2 h-12"></div>
+  <div class="w-full md:w-1/2 h-12"></div>
+
+</div>
+
+<div class="flex flex-wrap holen mx-auto justify-center my-2">
+  <button class="flex-shrink-0 bg-blue-500 text-md text-white py-2 px-6 rounded" type="button" id="reset">
+    New Course
+  </button>
+</div>
+
+<div class="flex flex-wrap holen mx-auto">
+
+  <div class="w-full">
+    <div id="map" style="width: 100%; height: 60vh;"></div>
+  </div>
+  <!-- <div class="w-full md:w-1/2 h-12"></div> -->
+
+</div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+</div>
+
+    
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN-8zSdr3WI2rZ9CaoUa1kM8djr8M2Y8U"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- <form class="w-full max-w-sm">
+  <div class="flex items-center border-b border-b-2 border-blue-500 py-2">
+    <input class="appearance-none bg-transparent border-none w-full text-white-700 mr-3 py-1 px-2 leading-tight focus:outline-border" type="text" placeholder="Course Name" aria-label="Full name">
+    <button class="flex-shrink-0 bg-blue-500 text-sm text-white py-1 px-4 rounded" type="button">
+      New Course
+    </button>
+  </div>
+</form> -->
