@@ -269,6 +269,8 @@ function rendermap(lat,log){
       
     // })
 
+
+
 }
 
 $('#reset').on('click',function(){

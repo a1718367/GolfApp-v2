@@ -29,7 +29,14 @@ body{
     font-size: 1.5em;
     font-weight: lighter;
 }
-.navbar, #today {
-    background: rgba(255,255,255,0.2);
+nav{
+    background: rgba(31, 29, 29, 0.5);
+    
+}
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
     
 }
