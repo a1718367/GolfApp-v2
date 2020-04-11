@@ -224,15 +224,15 @@ function initMap(lat, log) {
 };
 
 
-function storelocation(lat, lon){
-  const coursedata = {
-    holenum: 1,
-    latitude: lat,
-    longitude: lon
-  }
-  userlocal.push(coursedata);
-  localStorage.setItem("course_data", JSON.stringify(userlocal));
-}
+// function storelocation(lat, lon){
+//   const coursedata = {
+//     holenum: 1,
+//     latitude: lat,
+//     longitude: lon
+//   }
+//   userlocal.push(coursedata);
+//   localStorage.setItem("course_data", JSON.stringify(userlocal));
+// }
 
 
 function rendermap(lat,log){
@@ -251,8 +251,12 @@ function rendermap(lat,log){
     var maplatt = usermap[i].latitude;
     var maplon =  usermap[i].longitude;
     var userlatlon = new google.maps.LatLng(maplatt,maplon);
-    new google.maps.Marker({position: userlatlon, map: map, 
-      icon: 'https://maps.google.com/mapfiles/kml/pal2/icon13.png'});
+    new google.maps.Marker({position: userlatlon, 
+      label: usermap[i].holenum,
+      animation: google.maps.Animation.DROP,
+      map: map, 
+      //icon: 'https://maps.google.com/mapfiles/kml/pal2/icon13.png'
+    });
     
   }
 

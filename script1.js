@@ -255,8 +255,12 @@ function rendermap(lat,log){
     var maplatt = usermap[i].latitude;
     var maplon =  usermap[i].longitude;
     var userlatlon = new google.maps.LatLng(maplatt,maplon);
-    new google.maps.Marker({position: userlatlon, map: map, 
-      icon: 'https://maps.google.com/mapfiles/kml/pal2/icon13.png'});
+    new google.maps.Marker({position: userlatlon, 
+      label: usermap[i].holenum,
+      animation: google.maps.Animation.DROP,
+      map: map, 
+      //icon: 'https://maps.google.com/mapfiles/kml/pal2/icon13.png'
+    });
     
   }
 

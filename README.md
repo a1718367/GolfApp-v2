@@ -44,7 +44,7 @@ Under par, I press [ - ]. Over par, I press [ + ]. Total is tallied and displaye
 Completion at a hole , I click on the [Next] button.
 </li>
 <li>
-A new line on the score card is displayed and my current locaiton is logged on the map indicating the position of the hole.
+A new line on the score card is displayed and my current locaiton is logged on the map indicating the position of the hole with the hole number.
 </li>
 <li>
 Process continue until game completed at hole number 18.
