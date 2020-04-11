@@ -38,10 +38,10 @@ Game start
 At the 1st hole, I click on a tab and the score card is displayed.
 </li>
 <li>
-If I incurred a penalty, I click on a button on my app and record the type of penalty. Score is stored on local storage
+Under par, I press [ - ]. Over par, I press [ + ]. Total is tallied and displayed.
 </li>
 <li>
-When I made a successful putt, I click on a the [Next] button.
+Completion at a hole , I click on the [Next] button.
 </li>
 <li>
 A new line on the score card is displayed and my current locaiton is logged on the map indicating the position of the hole.
@@ -50,10 +50,10 @@ A new line on the score card is displayed and my current locaiton is logged on t
 Process continue until game completed at hole number 18.
 </li>
 <li>
-To reset score card, I pressed [Start or Reset]
+To reset score card, I press [Start or Reset]
 </li>
 <li>
-To reset course data, I pressed [New Course]
+To reset course data, I press [New Course]
 </li>
 </ul>
 <a href='https://a1718367.github.io/GolfApp-v2/'>Golf App</a>
