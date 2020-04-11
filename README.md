@@ -12,7 +12,7 @@ Feature include:
 <ul><li>Weather details</li><li> Map marking</li><li>Score Card</li>
 </ul>
 </p>
-Setting on device:
+Setting up on mobile devices:
 <ul><li>Enable Location</li><li>Enable WiFi</li><li>Enable Motion and Orientation settings</li>
 </ul>
 <h4>User's Story</h4>
