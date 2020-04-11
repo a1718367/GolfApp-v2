@@ -38,7 +38,8 @@ Game start
 At the 1st hole, I click on a tab and the score card is displayed.
 </li>
 <li>
-Under par, I press [ - ]. Over par, I press [ + ]. Total is tallied and displayed.
+<p>Under par, I press [ - ]. Over par, I press [ + ]. Total is tallied and displayed.</p>
+<p>Or simply use the add storke button to record the stroke made.</p>
 </li>
 <li>
 Completion at a hole , I click on the [Next] button.
