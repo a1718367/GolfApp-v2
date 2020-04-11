@@ -58,6 +58,8 @@ To reset course data, I pressed [New Course]
 </ul>
 <a href='https://a1718367.github.io/GolfApp-v2/'>Golf App</a>
 
+<div style="display:flex">
 <img src='assets/home1.png' alt='screenshothome' width="250" height="500">
-<img src='assets/home2.png' alt='screenshothome' width="250" height="500">
-<img src='assets/scorecard.png' alt='screenshothome' width="250" height="500">
+<img src='assets/home2.png' alt='screenshothome' width="250" height="500" style="margin-left:2px">
+<img src='assets/scorecard.png' alt='screenshothome' width="250" height="500" style="margin-left:2px">
+</div>
