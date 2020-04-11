@@ -1,49 +1,63 @@
-<h1>GolfApp</h1>
+<h1>Golf App-v2</h1>
 
+
+
+
+<h4>App Infomation</h4>
+<p>
+This application is developed to assist golfer on the course.
+</p>
+<p>
+Feature include: 
+<ul><li>Weather details</li><li> Map marking</li><li>Score Card</li>
+</ul>
+</p>
+Setting on device:
+<ul><li>Enable Location</li><li>Enable WiFi</li><li>Enable Motion and Orientation settings</li>
+</ul>
 <h4>User's Story</h4>
-<p>
-I want to know if my game will be affected by the weather and the layout of the course.
-</p>
-<p>
-I can use google map and weather app to look up this data, but now I have a new golfing app
-</p>
-
-When I arrive at the golf course, I open my app
 <ul>
 <li>
-Weather & forecast details at the location will showed up.
+When the App is loaded, Weather & forecast details is displayed 
 </li>
 <li>
-The map of the course will be displayed.
+The map of the course is displayed with user's current location marked.
 </li>
 <li>
-Current wind speed and direction will also become available
+If previously course data is available, hole on the course will be marked on the map.
+</li>
+<li>
+Compass and wind direction will be indicated.
 </li>
 </ul>
 <div>
-Then I proceed to start my game
+Game start
 </div>
 <ul>
 <li>
-At the 1st hole, I click on a tab and a score card is displayed
+At the 1st hole, I click on a tab and the score card is displayed.
 </li>
 <li>
 If I incurred a penalty, I click on a button on my app and record the type of penalty. Score is stored on local storage
 </li>
 <li>
-At the conclusion at a hole, I then click a button indicating moving on to the next hole.
+When I made a successful putt, I click on a the [Next] button.
 </li>
 <li>
-A map on the scorecard will centre my location and I can click on the map to mark the location of the hole.
+A new line on the score card is displayed and my current locaiton is logged on the map indicating the position of the hole.
 </li>
 <li>
 Process continue until game completed at hole number 18.
 </li>
 <li>
-Then my score is tally up and my performance at each hole and the game is displayed.
+To reset score card, I pressed [Start or Reset]
+</li>
+<li>
+To reset course data, I pressed [New Course]
 </li>
 </ul>
 <a href='https://a1718367.github.io/GolfApp-v2/'>Golf App</a>
 
-<img src='assets/screenshot.png' alt='screenshothome'>
-<img src='assets/screenshotsc.png' alt='screenshotscorecard'>
+<img src='assets/home1.png' alt='screenshothome' width="250" height="500">
+<img src='assets/home2.png' alt='screenshothome' width="250" height="500">
+<img src='assets/scorecard.png' alt='screenshothome' width="250" height="500">
